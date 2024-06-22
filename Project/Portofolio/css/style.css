@@ -57,7 +57,7 @@ nav .navbar li {
 .burger-nav {
     display: none;
     width: 100%;
-    background-color: var(--light-color);
+    background-color: var(--white-color);
 }
 
 .burger-nav li {
@@ -545,5 +545,11 @@ footer p {
         font-size: 16px;
         padding: 8px 16px;
     }
-
+    /* contact */
+    .contact .item-container{
+        gap: 12px;
+    }
+    .contact .item-container span, .contact .item-container a{
+        font-size: 0.9em;
+    }
 }

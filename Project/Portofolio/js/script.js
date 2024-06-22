@@ -24,3 +24,15 @@ document.querySelector('.next').addEventListener('click', () => {
 function updateSlidePosition() {
     swiperWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
+const burgerMenu = document.getElementById("burger-menu");
+let burgerNav = document.getElementById("burger-nav");
+let click = 0;
+burgerMenu.addEventListener("click", () => {
+    if (click == 0) {
+        burgerNav.style.display = "block";
+        click += 1;
+    } else {
+        burgerNav.style.display= "none";
+        click -= 1;
+    }
+})
