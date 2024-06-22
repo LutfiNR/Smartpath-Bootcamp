@@ -45,7 +45,7 @@ Selamat datang di portofolio saya! Berikut adalah
 
 ## Dokumentasi
 - Desktop
-![Desktop](./docs/screenshot-desktop.png)
+- ![Desktop](./docs/screenshot-desktop.png)
 
 - Mobile
-![Mobile](./docs/screenshot-mobile.jpeg)
+- ![Mobile](./docs/screenshot-mobile.jpeg)
