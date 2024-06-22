@@ -187,12 +187,12 @@ main p {
   flex-direction: column;
   gap: 48px;
 }
-.experience .container-item {
+.experience .item-container {
   display: inherit;
   flex-direction: column;
   gap: 12px;
 }
-.experience .container-item .item {
+.experience .item-container .item {
   display: grid;
   grid-template-columns: 0.1fr 0.8fr 1fr;
   gap: 96px;
@@ -204,16 +204,18 @@ main p {
     position: relative;
 }
 
-.item-container {
+.education .item-container {
     margin: 24px 0;
     position: relative;
     width: 50%;
 }
-
-.item-container.right {
-    left: 50%;
+.education .item-container.left{
+    text-align: end;
 }
-.item-container::after {
+.education .item-container.right {
+    left: 50%;
+    }
+.education .item-container::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -221,23 +223,23 @@ main p {
     right: -17px;
     background: white;
     border: 4px solid var(--primary-color);
-    top: 36px;
+    top: 40%;
     border-radius: 50%;
 }
 
-.item-container.right::after {
+.education .item-container.right::after {
     left: -16px;
 }
 
-.content {
-    padding: 18px 32px;
+.education .content {
+    padding: 18px 48px;
     background: var(--primary-color);
     position: relative;
     border-radius: 12px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
     }
     
-.content> *{
+.education .content> *{
     margin: 6px 0;
     color: var(--white-color);
 }
