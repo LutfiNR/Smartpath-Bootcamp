@@ -205,7 +205,7 @@ color: var(--black-color);
 }
 
 .education .item-container {
-  margin: 24px 0;
+  margin: 48px 0;
   position: relative;
   width: 50%;
 }
@@ -220,21 +220,19 @@ color: var(--black-color);
   position: absolute;
   width: 25px;
   height: 25px;
-  right: 12px;
   background: var(--primary-color);
-  top: 10%;
+  top: 6px;
+  right: -12px;
   border-radius: 50%;
+  box-shadow: 0 0 12px rgba(252, 114, 114, 0.5);
 }
 .education .item-container.right::after {
-  left: 12px;
+  left: -12px;
 }
 
 .education .content {
-  padding: 18px 64px;
-  background: var(--white-color);
+    padding: 0 32px;
   position: relative;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(167, 167, 167, 0.1);
   color: var(--black-color);
 }
 
@@ -262,7 +260,7 @@ color: var(--black-color);
 .skills .item-container .item:hover {
     background-color: var(--primary-color);
     color: var(--white-color);
-    box-shadow: 0 0 12px rgba(252, 114, 114, 0.4);
+    box-shadow: 0 0 12px rgba(252, 114, 114, 0.5);
 }
 .skills .item-container .item p {
     font-size: 20px;
