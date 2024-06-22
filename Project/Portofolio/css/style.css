@@ -224,7 +224,7 @@ color: var(--black-color);
   top: 6px;
   right: -12px;
   border-radius: 50%;
-  box-shadow: 0 0 12px rgba(252, 114, 114, 0.5);
+    box-shadow: 0 0 12px rgba(252, 114, 114, 0.5);
 }
 .education .item-container.right::after {
   left: -12px;
@@ -253,20 +253,83 @@ color: var(--black-color);
     gap: 24px;
     color: var(--black-color);
     background-color: var(--white-color);
-    box-shadow: 0 0 12px rgba(167, 167, 167, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     padding: 48px;
 }
 .skills .item-container .item:hover {
     background-color: var(--primary-color);
     color: var(--white-color);
-    box-shadow: 0 0 12px rgba(252, 114, 114, 0.5);
+    box-shadow: 0 4px 12px rgba(252, 114, 114, 0.5);
 }
 .skills .item-container .item p {
     font-size: 20px;
     font-weight: 600;
 }
 
+/* projects */
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects .swiper-container {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects .swiper-wrapper {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.projects .swiper-slide {
+    min-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.projects .swiper-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.projects .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--white-color);
+    padding: 32px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.projects .overlay a{
+    display: block;
+    margin-top: 12px;
+    text-decoration: underline;
+    color: var(--white-color);
+}
+.projects .swiper-slide:hover .overlay {
+    opacity: 1;
+}
+
+.projects .swiper-button {
+    background: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 18px;
+    margin: 24px;
+}
 /* responsive */
 /* medium */
 @media screen and (max-width: 1024px) {
