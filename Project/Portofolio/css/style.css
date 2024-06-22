@@ -13,7 +13,7 @@
   --primary-color: #bb2525;
   --light-color: #f8f8f8;
   --white-color: #ffffff;
-  --black-color: #333333;
+  --black-color: #424242;
   --grey-color: #656565;
 }
 
@@ -187,12 +187,16 @@ section h1 {
   display: inherit;
   flex-direction: column;
   gap: 12px;
+color: var(--black-color);
 }
 .experience .item-container .item {
   display: grid;
-  grid-template-columns: 0.1fr 0.8fr 1fr;
+  grid-template-columns: 0.1fr 0.6fr 1fr;
   gap: 96px;
-  color: var(--black-color);
+}
+.experience .item-container .item p {
+    font-size: 18px;
+    font-weight:600;
 }
 
 /* education */
@@ -233,13 +237,36 @@ section h1 {
   box-shadow: 0 0 12px rgba(167, 167, 167, 0.1);
   color: var(--black-color);
 }
-.education .content:hover {
-    background-color: var(--primary-color);
-    color: var(--white-color);
-}
 
 .education .content > * {
   margin: 6px 0;
+}
+
+/* skills */
+.skills .item-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 48px;
+}
+.skills .item-container .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    color: var(--black-color);
+    background-color: var(--white-color);
+    box-shadow: 0 0 12px rgba(167, 167, 167, 0.1);
+    border-radius: 12px;
+    padding: 48px;
+}
+.skills .item-container .item:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    box-shadow: 0 0 12px rgba(252, 114, 114, 0.4);
+}
+.skills .item-container .item p {
+    font-size: 20px;
+    font-weight: 600;
 }
 
 /* responsive */
