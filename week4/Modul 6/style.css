@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0px auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Cara Panggil class itu pakai (.) */
+
+.About {
+  text-align: center;
+}
+
+.detail-portofolio {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+#skills {
+  color: blue;
+}
+
+.my-skills {
+  display: flex;
+  gap: 24px;
+  padding: 10px 0px;
+}
+
+@media (max-width: 600px) {
+  #skills {
+    color: red;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  #skills {
+    color: green;
+  }
+}
+
+@media (min-width: 901) {
+  #skills {
+    color: blue;
+  }
+}
