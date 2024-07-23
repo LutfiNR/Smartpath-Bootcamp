@@ -1,4 +1,3 @@
-// src/components/CustomLink.jsx
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion"
