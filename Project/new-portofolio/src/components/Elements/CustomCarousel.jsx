@@ -47,7 +47,7 @@ const CustomCarousel = ({ items }) => {
     transition={{ duration: 1, type: "spring" , delay:0.4}}
      className='w-full md:w-2/3'>
       <div
-        className="overflow-hidden relative"
+        className="relative"
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
