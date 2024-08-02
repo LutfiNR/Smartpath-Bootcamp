@@ -1,9 +1,12 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 
 const CustomCarousel = ({ items }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
+
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
@@ -16,6 +19,26 @@ const CustomCarousel = ({ items }) => {
       prevIndex === items.length - 1 ? 0 : prevIndex + 1
     );
   };
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX.current - touchEndX.current > 50) {
+      handleNext();
+    }
+
+    if (touchStartX.current - touchEndX.current < -50) {
+      handlePrev();
+    }
+  };
+  const handleDotClick = (index) => {
+    setCurrentIndex(index);
+  };
 
   return (
     <motion.div 
@@ -23,6 +46,12 @@ const CustomCarousel = ({ items }) => {
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 1, type: "spring" , delay:0.4}}
      className='w-full md:w-2/3'>
+      <div
+        className="overflow-hidden relative"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
       <div className='overflow-hidden outline-dashed text-primary shadow-primary-lg relative'>
         <div
           className='flex transition-transform duration-500 ease-in-out'
@@ -51,7 +80,7 @@ const CustomCarousel = ({ items }) => {
         </div>
       </div>
 
-      <div className='flex gap-6 justify-center mt-8'>
+      <div className='md:flex gap-6 justify-center mt-8 hidden '>
         <motion.div
           className='flex items-center justify-center bg-primary hover:shadow-primary-sm p-4 py-2  text-secondary'
           whileHover={{ x: -4, y: -4 }}
@@ -66,6 +95,18 @@ const CustomCarousel = ({ items }) => {
           onClick={handleNext}>
           Next
         </motion.div>
+      </div>
+      </div>
+      <div className="flex space-x-2 justify-center mt-8">
+        {items.map((_, index) => (
+          <button
+            key={index}
+            className={`w-3 h-3 rounded-full ${
+              index === currentIndex ? 'bg-primary' : 'shadow-primary-sm'
+            }`}
+            onClick={() => handleDotClick(index)}
+          ></button>
+        ))}
       </div>
     </motion.div>
   );
