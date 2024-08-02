@@ -5,35 +5,35 @@ const Skills = () => {
   const skillItem = [
     {
       name: "HTML",
-      path: "/src/assets/Html 5.png",
+      path: "/assets/Html 5.png",
     },
     {
       name: "CSS",
-      path: "/src/assets/CSS3.png",
+      path: "/assets/CSS3.png",
     },
     {
       name: "Bootstrap",
-      path: "/src/assets/Bootstrap.png",
+      path: "/assets/Bootstrap.png",
     },
     {
       name: "Tailwind",
-      path: "/src/assets/Tailwind CSS.png",
+      path: "/assets/Tailwind CSS.png",
     },
     {
       name: "Javascript",
-      path: "/src/assets/JavaScript.png",
+      path: "/assets/JavaScript.png",
     },
     {
       name: "Node JS",
-      path: "/src/assets/Nodejs.png",
+      path: "/assets/Nodejs.png",
     },
     {
       name: "Git",
-      path: "/src/assets/Git.png",
+      path: "/assets/Git.png",
     },
     {
       name: "Figma",
-      path: "/src/assets/Figma.png",
+      path: "/assets/Figma.png",
     },
   ];
 

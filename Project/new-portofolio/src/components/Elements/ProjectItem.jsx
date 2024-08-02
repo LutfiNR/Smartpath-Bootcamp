@@ -12,7 +12,7 @@ const ProjectItem = ({ title, description, image, link }) => {
       <div className='absolute w-full h-1/3 bottom-0 text-secondary px-12 py-4 flex flex-col gap-2'>
         <h1 className='text-2xl'>{title}</h1>
         <p>{description}</p>
-        <a href={link} className='underline'>Visit Site</a>
+        <a href={link} className='underline' target='_blank'>Visit Site</a>
       </div>
     </div>
   );
