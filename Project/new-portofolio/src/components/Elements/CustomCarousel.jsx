@@ -37,9 +37,9 @@ const CustomCarousel = ({ items }) => {
                 className='w-full h-full object-cover'
               />
               <div className='absolute bottom-0 w-full h-1/3 bg-slate-950 opacity-75' />
-              <div className='absolute bottom-0 w-full h-1/3 text-secondary px-8 py-4 flex flex-col gap-2'>
-                <h3 className='text-2xl font-bold'>{item.title}</h3>
-                <p>{item.description}</p>
+              <div className='absolute bottom-0 w-full h-1/3 text-secondary px-4 py-2 md:px-8 md:py-4 flex flex-col md:gap-2'>
+                <h3 className='md:text-2xl font-bold'>{item.title}</h3>
+                <p className='hidden md:block'>{item.description}</p>
                 <a
                   href={item.link}
                   className='underline'>
