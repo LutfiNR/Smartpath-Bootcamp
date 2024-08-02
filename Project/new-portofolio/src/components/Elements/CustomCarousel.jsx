@@ -6,6 +6,7 @@ const CustomCarousel = ({ items }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
+  const touchMoved = useRef(false);
 
 
   const handlePrev = () => {
@@ -21,19 +22,23 @@ const CustomCarousel = ({ items }) => {
   };
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
+    touchMoved.current = false;
   };
 
   const handleTouchMove = (e) => {
+    touchMoved.current = true;
     touchEndX.current = e.touches[0].clientX;
   };
 
   const handleTouchEnd = () => {
-    if (touchStartX.current - touchEndX.current > 50) {
-      handleNext();
-    }
+    if (touchMoved.current) {
+      const swipeDistance = touchStartX.current - touchEndX.current;
 
-    if (touchStartX.current - touchEndX.current < -50) {
-      handlePrev();
+      if (swipeDistance > 50) {
+        handleNext();
+      } else if (swipeDistance < -50) {
+        handlePrev();
+      }
     }
   };
   const handleDotClick = (index) => {
@@ -82,14 +87,14 @@ const CustomCarousel = ({ items }) => {
 
       <div className='md:flex gap-6 justify-center mt-8 hidden '>
         <motion.div
-          className='flex items-center justify-center bg-primary hover:shadow-primary-sm p-4 py-2  text-secondary'
+          className='flex items-center justify-center bg-primary hover:shadow-primary-sm p-4 py-2  text-secondary cursor-pointer'
           whileHover={{ x: -4, y: -4 }}
           whileTap={{ scale: 0.95 }}
           onClick={handlePrev}>
           Prev
         </motion.div>
         <motion.div
-          className='flex items-center justify-center bg-primary hover:shadow-primary-sm px-4 py-2 text-secondary'
+          className='flex items-center justify-center bg-primary hover:shadow-primary-sm px-4 py-2 text-secondary cursor-pointer'
           whileHover={{ x: -4, y: -4 }}
           whileTap={{ scale: 0.95 }}
           onClick={handleNext}>

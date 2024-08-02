@@ -49,7 +49,7 @@ const projects = [
     title: 'FITE Football Academy',
     description:
       'A comprehensive platform for FITE Football Academy, featuring information about training programs, schedules, and events.',
-    image: '/src/assets/fite.png',
+    image: '/assets/fite.png',
     link: '#',
   },
 ];
