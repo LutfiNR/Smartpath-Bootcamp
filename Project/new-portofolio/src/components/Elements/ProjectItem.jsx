@@ -2,11 +2,11 @@ import PropTypes from 'prop-types';
 
 const ProjectItem = ({ title, description, image, link }) => {
   return (
-    <div className='h-auto'>
+    <div className=''>
       <img
         src={image}
         alt={title}
-        className='w-full h-full object-cover'
+        className='w-screen md:w-full h-screen object-cover'
       />
       <div className='absolute w-full h-1/3 bottom-0 opacity-75 bg-slate-950'/>
       <div className='absolute w-full h-1/3 bottom-0 text-secondary px-12 py-4 flex flex-col gap-2'>
