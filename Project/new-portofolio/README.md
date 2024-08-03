@@ -1,8 +1,15 @@
-# React + Vite
+# Portofolio Upik
+Selamat datang di portofolio saya! Berikut adalah 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Fitur-Fitur
+- React Router
+- Acordion
+- Motion 
+- Carousel
+- Validation Form
+- Event Handling
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Dokumentasi
+- ![Home](./src/Doc/home.png)
+- ![About](./src/Doc/about.png)
+- ![Project](./src/Doc/project.png)
