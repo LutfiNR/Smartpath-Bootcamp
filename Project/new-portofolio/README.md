@@ -10,6 +10,9 @@ Selamat datang di portofolio saya! Berikut adalah
 - Event Handling
 
 ## Dokumentasi
-- ![Home](./src/Doc/home.png)
-- ![About](./src/Doc/about.png)
-- ![Project](./src/Doc/project.png)
+![Home](./src/Doc/home.png)
+![About](./src/Doc/about.png)
+![Project](./src/Doc/project.png)
+
+## Demo
+Kunjungi [Portofolio Upik](https://portofolio-upik.vercel.app) untuk melihat demo.
