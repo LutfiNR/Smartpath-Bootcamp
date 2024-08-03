@@ -57,13 +57,16 @@ const projects = [
 const Project = () => {
   return (
     <div className='container mx-auto p-4 h-screen md:h-auto text-primary'>
-      <Headline
-        initial={{ opacity: 0, y: -200 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, type: 'spring' }}
-        className='text-center'>
-        My Projects
-      </Headline>
+      <div className="flex justify-center">
+        <Headline
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, type: "spring" }}
+          className="text-center inline-block"
+        >
+          Projects
+        </Headline>
+      </div>
       <div className='carousel-container flex justify-center items-center flex-col'>
       <CustomCarousel items={projects} />
       </div>
