@@ -24,6 +24,14 @@ const Skills = () => {
       path: "/assets/JavaScript.png",
     },
     {
+      name: "React JS",
+      path: "/assets/React.svg",
+    },
+    {
+      name: "Next JS",
+      path: "/assets/Next.png",
+    },
+    {
       name: "Node JS",
       path: "/assets/Nodejs.png",
     },

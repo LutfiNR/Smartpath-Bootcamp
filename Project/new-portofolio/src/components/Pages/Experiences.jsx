@@ -32,7 +32,7 @@ const Experiences = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, type: "spring", delay: 0.4 }}
             >
-              In 2023, <b className="bg-primary text-secondary">I interned at Mentor Belajarku</b>, where I combined my teaching skills with social media content creation. I developed educational materials and engaging social media posts, making learning accessible and enjoyable for our audience.
+              From 2023 to 2024, I interned at <b className="bg-primary text-secondary">Mentor Belajarku as a Teaching Mentor</b>, where I was responsible for developing educational materials as well as creating and managing engaging social media content. In 2025, I continued my internship experience at <b className="bg-primary text-secondary">SMA YP Unila Bandar Lampung</b> with a focus on technical development, where I successfully built a <b className="bg-primary text-secondary">website for the school's inventory system.</b>
             </Content>
           </div>
         </div>

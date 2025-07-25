@@ -77,7 +77,7 @@ const CustomCarousel = ({ items }) => {
                 <a
                   href={item.link}
                   className='underline'>
-                  Visit Site
+                  Visit
                 </a>
               </div>
             </div>

@@ -38,8 +38,6 @@ const About = () => {
               languages such as HTML, CSS, and JavaScript. I am committed to
               continuous learning and growth in every project I undertake,
               aiming to create innovative and efficient web solutions.
-              Currently, I am working at a technology startup where I contribute
-              to building and maintaining responsive and user-friendly websites.
             </Content>
           </div>
         </div>
@@ -61,7 +59,7 @@ const About = () => {
             >
               I love exploring new technologies, learning about different
               programming languages, and contributing to open-source projects. I
-              also enjoy playing basketball and watching sports. I am always
+              also enjoy playing volleyball and watching sports. I am always
               looking for opportunities to learn and grow in my field.
             </Content>
           </div>
